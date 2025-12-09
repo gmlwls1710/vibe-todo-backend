@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const Todo = require('./models/Todo');
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT;
 
 // MongoDB 연결
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/todo-db';
